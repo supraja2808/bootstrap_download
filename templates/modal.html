@@ -1,0 +1,222 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODAL</title>
+    <link rel="" href="{% static 'css/bootstrap-grid.css' %}">
+    <link rel="" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="" href="{% static 'css/bootstrap-reboot.css' %}">
+    <link rel="" href="{% static 'css/bootstrap-reboot.min.css' %}">
+    <link rel="" href="{% static 'css/bootstrap.css' %}">
+    <link rel="" href="{% static 'css/bootstrap.min.css' %}">
+
+</head>
+<body>
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scrollable modal -->
+<div class="modal-dialog modal-dialog-scrollable">
+    ...
+  </div>
+
+  <!-- Vertically centered modal -->
+<div class="modal-dialog modal-dialog-centered">
+    ...
+  </div>
+  
+  <!-- Vertically centered scrollable modal -->
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    ...
+  </div>
+
+  <div class="modal-body">
+    <h5>Popover in a modal</h5>
+    <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+    <hr>
+    <h5>Tooltips in a modal</h5>
+    <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+  </div>
+
+  <div class="modal-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+        <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+          Level 1: .col-sm-9
+          <div class="row">
+            <div class="col-8 col-sm-6">
+              Level 2: .col-8 .col-sm-6
+            </div>
+            <div class="col-4 col-sm-6">
+              Level 2: .col-4 .col-sm-6
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+$('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text('New message to ' + recipient)
+    modal.find('.modal-body input').val(recipient)
+  })
+
+
+  <div class="modal" tabindex="-1" aria-labelledby="..." aria-hidden="true">
+    ...
+  </div>
+
+  <div class="modal-dialog modal-xl">...</div>
+<div class="modal-dialog modal-lg">...</div>
+<div class="modal-dialog modal-sm">...</div>
+
+<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+
+$('#myModal').modal(options)
+
+$('#myModal').modal({
+    keyboard: false
+  })
+
+
+  $('#myModal').modal('toggle')
+
+  $('#myModal').modal('show')
+
+  $('#myModal').modal('hide')
+
+  $('#myModal').modal('handleUpdate')
+
+  $('#myModal').on('hidden.bs.modal', function (event) {
+    // do something...
+  })
+    
+   <script src="{% static 'js/bootstrap.bundle.js' %}"></script> 
+   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.js' %}"></script>
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
